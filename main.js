@@ -1,6 +1,6 @@
 
 function setup() {
-     canvas = createCanvas(500, 350);
+     canvas = createCanvas(400, 350);
       canvas.center();
        video = createCapture(VIDEO);
         video.hide();
@@ -10,7 +10,7 @@ function modelLoaded(){
  console.log('Model Loaded!');
 }
 function draw(){
- image (video, 0,0,500,350);
+ image (video, 0,0,400,350);
  classifier.classify(video, gotResult);
 }
 
